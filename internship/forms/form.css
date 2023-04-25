@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1{
+    height: 10%;
+    margin-bottom: 50px;
+    color: green;
+  }
+form {
+    width: 600px;
+    height: 95%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  form label {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #da7719;
+  }
+  form textarea {
+    margin-top: 10px;
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    /* resize: vertical; */
+  }
+  form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="file"] {
+    margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #CCCCCC;
+  border-radius: 5px;
+}
+form input[type="submit"] {
+    /* display: block; */
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #1ed527;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  form input[type="submit"]:hover {
+    background-color: #e28e18;
+  }
+  
+  form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #336699;
+  box-shadow: 0 0 5px #336699;
+}
+
+
+form label.error {
+    color: #FF0000;
+    font-weight: normal;
+    margin-top: 5px;
+
+  }
+
+
+@media screen and (max-width:800px){
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    width: 80%;
+    padding: 20px 0;
+  }
+  form{
+    width: 100%;
+    padding: 0;
+  }
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form input[type="file"], 
+  form input[type="submit"],
+  form textarea
+  {
+    height: 35px;
+    width: 100%;
+    padding: 0;
+  }
+}
