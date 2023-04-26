@@ -45,7 +45,7 @@ button{
     font-weight: bold;
     background-color: rgb(120, 213, 26);
     width: 100px;
-    height: 30px;
+    height: 40px;
     position: relative;
     top: 80%;
     left: 38%;
@@ -53,6 +53,7 @@ button{
 }
 button:hover{
     background-color: rgb(221, 107, 41);
+    transition: 0.5S all;
 
 }
 

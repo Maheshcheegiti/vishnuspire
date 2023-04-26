@@ -121,7 +121,6 @@ input[type=button] {
 
 .info {
     width: 100%;
-    padding-right: 500px;
 }
 
 p {
@@ -140,16 +139,18 @@ p {
 .st5 {
     background-color: #004f32;
     width: 100%;
-    height: 85vh;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .items{
+    margin: 20px 0;
     margin-left: 100px;
 }
 .logo-image{
+    margin: 20px 0;
     margin-right: 100px;
 }
 .icons {
@@ -440,6 +441,8 @@ p {
 
 #vishnu-move{
     animation: move 3s ease-in-out infinite;
+    position: relative;
+    top: -50px;
 }
 
 @keyframes move {
@@ -647,6 +650,9 @@ p {
     }
     .btn3{
        margin: 20px;
+    }
+    #vishnu-move{
+        top: 10px;
     }
     @keyframes move {
         0%{
